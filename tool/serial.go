@@ -51,7 +51,6 @@ func main() {
 		if strings.ToUpper(strings.TrimSpace(cmd)) == "EXIT" {
 			break
 		}
-		commander.EnterCommandMode()
 		res, err := commander.SendAndRecv(cmd)
 		if err != nil {
 			fmt.Println(err)
